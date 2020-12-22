@@ -790,5 +790,7 @@ li.projects-list-item {
   left: 0; */
 }
 .icon-person {
+  position: absolute;
+  top: 0;
   fill: #212121;
 }
