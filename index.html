@@ -325,29 +325,30 @@
                     <use href="./images-svg/sprite.svg#linkedin"></use>
                 </svg></a>
         </li></ul></div>
+
         <div class="footer-right">
         <p class="text-uppercase">Подпишитесь на рассылку</p>
+        <div class="form-field-footer">
         <form class="form-footer">
-            <div class="form-field">
-    <input class="form-input-footer" type="email" id="mail" name="mail" id="mail" />
-    <label class="form-label" for="mail">E-mail</label>
-            </form>
-            <button class="hero-button" type="button">
-            Подписаться<svg class="send" width="22px" height="22px" ><use href="./images-svg/sprite.svg#icon-send"></use></svg>
-            </button>
-            </div>
-            </div>
+    <label class="form-label-footer">
+<input class="form-input-footer" placeholder="E-mail" type="email" name="mail"/></label>
+     </form>
+     <button class="hero-button" type="button">
+     Подписаться<svg class="send" width="22px" height="22px" ><use href="./images-svg/sprite.svg#icon-send"></use></svg>
+     </button>
+     </div></div>
 </div>
 </footer>
+
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-<button type="button" class="close-button" width="18px" height="18px" data-modal-close>
-    <svg class="icon-close"><use href="./images-svg/symbol.svg#icon-close-black" width="19px" height="19px"></use></svg></button>
+<button type="button" class="close-button" data-modal-close>
+    <svg class="icon-close" width="19px" height="19px"><use href="./images-svg/symbol.svg#icon-close-black"></use></svg></button>
 <b class="modal-text">Оставьте свои данные, мы вам перезвоним</b>
     <form class="form-modal">
     <div class="form-field">
     <input class="form-input" type="text" id="name" name="name" />
-    <label class="form-label" for="name">Имя</label>    
+    <label class="form-label" for="name">Имя</label>
     <svg class="icon-person" width="18px" height="18px">
         <use href="./images-svg/sprite.svg#icon-person"></use>
     </svg>
@@ -360,11 +361,15 @@
     </svg>
 </div>
 <div class="form-field">
-    <input class="form-input" type="email" id="mail" name="mail" id="mail" />
-<label class="form-label" for="mail">Почта</label>
+    <input class="form-input" type="email" name="mail" id="maill" />
+<label class="form-label" for="maill">Почта</label>
     <svg class="icon-person" width="18px" height="18px">
         <use href="./images-svg/sprite.svg#icon-email"></use>
     </svg>
+</div>
+<div class="form-field">
+    <input class="form-input comment" type="email" name="mail" id="maill" placeholder="Введите текст" />
+    <label class="form-label" for="maill">Комментарий</label>
 </div>
 <!-- </form> -->
     <button type="submit">Отправить</button>
