@@ -752,6 +752,8 @@ li.projects-list-item {
 .close-button:focus,
 .close-button:hover {
   fill: var(--accent-color);
+  outline-color: var(--accent-color);
+  /* border-radius: 50%; */
 }
 .is-hidden {
   opacity: o;
@@ -881,4 +883,9 @@ li.projects-list-item {
   letter-spacing: 0.03em;
 
   color: #757575;
+}
+.checkbox-field .main-button:hover,
+.checkbox-field .main-button:focus {
+  background-color: #188ce8;
+  color: var(--white-color);
 }
