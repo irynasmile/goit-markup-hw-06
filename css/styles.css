@@ -736,13 +736,14 @@ li.projects-list-item {
   opacity: 70%;
 } */
 .close-button {
+  position: absolute;
   width: 30px;
   height: 30px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-  position: absolute;
+
   top: 8px;
   right: 8px;
   padding: 4px;
@@ -767,70 +768,73 @@ li.projects-list-item {
 .inputs {
   width: 448px;
   height: 342px;
+  display: block;
+  box-sizing: border-box;
+}
+.form-label {
+  position: relative;
+  display: block;
+}
+.form-input {
+  width: 100%;
+  margin-top: 20px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 38px;
+}
+.form-label + .form-label {
+  margin-top: 10px;
 }
 .form-text {
+  position: absolute;
   display: inline-block;
-  margin-bottom: 4px;
+
+  /* margin-bottom: 4px; */
   font-size: 12px;
   line-height: 1.166;
-  left: 0px;
+  left: 0;
+  top: 10%;
   font-style: normal;
   font-weight: normal;
   /* background-color: yellow; */
   letter-spacing: 0.01em;
   color: #757575;
 }
-.form-text:hover ~ .icon-person,
-.form-text:focus ~ .icon-person {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+/* .form-label:focus-within .icon-person {
+  fill: var(--accent-color);
+} */
+.form-input:hover ~ .icon-person,
+.form-input:focus ~ .icon-person {
   fill: var(--accent-color);
 }
-.form-label:hover .icon-person,
-.form-label:focus .icon-person {
-  fill: var(--accent-color);
-}
-.form-label:hover .form-text,
-.form-label:focus .form-text {
+.form-input:hover ~ .form-text,
+.form-input:focus ~ .form-text {
   color: var(--accent-color);
-  border-color: var(--accent-color);
-  /* fill: var(--accent-color); */
 }
-/* .icon-person:hover,
-.icon-person:focus {
-  fill: green; 
-}*/
 .form-input:hover,
 .form-input:focus {
   border-color: var(--accent-color);
+  outline-color: var(--accent-color);
 }
-.form-input {
-  padding: 15px;
-  /* position: relative; */
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
-  border-radius: 4px;
-  width: 448px;
-  height: 38px;
-}
-.form-input + .form-input {
-  margin-top: 45px;
-}
-.form-label {
-  position: relative;
-  display: block;
-  margin-top: 10px;
-}
+/* .form-input:hover,
+.form-input:focus {
+  border: 1px solid var(--accent-color);
+} */
+
 .icon-person {
   position: absolute;
   display: inline-block;
-  top: 50%;
+  top: 35%;
   left: 12px;
-  /* padding: 12px; */
+  /* top: 50%;
+  left: 50%;*/
+  transform: translateY(50%);
   fill: #212121;
 }
 .form-label.comment {
-  width: 448px;
+  width: 100%;
   height: 138px;
   border-radius: 4px;
   font-size: 12px;
@@ -839,9 +843,20 @@ li.projects-list-item {
 
   color: rgba(117, 117, 117, 0.5);
 }
+.form-text.comment {
+  top: 3%;
+}
 .form-input.comment {
   height: 120px;
   color: rgba(117, 117, 117, 0.5);
+}
+.checkbox-field {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  text-align: top;
+  display: flex;
+  align-items: center;
 }
 .checkbox-form-input {
   width: 12px;
@@ -858,7 +873,7 @@ li.projects-list-item {
   color: #757575;
 }
 .form-label + .main-button {
-  margin: auto;
+  margin-top: 20px;
 }
 .checkbox-agree {
   font-size: 14px;
