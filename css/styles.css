@@ -760,7 +760,6 @@ li.projects-list-item {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 12px;
 }
 .modal-form {
   display: flex;
@@ -781,6 +780,9 @@ li.projects-list-item {
   height: 40px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.form-label:nth-child(1) {
+  margin-top: 12px;
+}
 .form-label {
   margin-bottom: 10px;
   width: 100%;
@@ -788,7 +790,6 @@ li.projects-list-item {
   line-height: 1.166;
   letter-spacing: 0.01em;
   color: #757575;
-  /* background-color: orange; */
 }
 .form-label:focus-within .form-icon {
   fill: var(--accent-color);
